@@ -549,6 +549,20 @@ h1 {
 }
 
 /* Featured works */
+
+.recentwork-title {
+    padding: 15px 5%;
+    margin: 15px auto;
+    margin-top: 50px auto;
+    text-align: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.recentwork-title span {
+    color: #2563eb;
+}
+
 .feature-tiles {
     width: 90%;
     max-width: 1300px;
@@ -611,7 +625,7 @@ h1 {
 }
 
 .overlay h3 {
-    font-size: 2rem;
+    font-size: clamp(2rem 3vw+1 3rem);
     margin-bottom: 12px;
 }
 
@@ -702,14 +716,23 @@ h1 {
     margin: clamp(20px, 5vw, 50px);
     padding: 25px 8%;
     height: auto;
-    /* border: solid; */
+    border: solid;
+    border-width: 1px;
     border-radius: 10px;
-    /* border-color:white; */
+    border-color: rgb(176, 196, 202);
+    background-color: white;
     text-align: center;
     align-items: center;
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
-    ;
 
+    transition: 0.3s;
+
+
+}
+
+.tile-1:hover,
+.tile-2:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .12);
 }
 
 .achievements h2,
