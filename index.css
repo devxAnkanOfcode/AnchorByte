@@ -1149,6 +1149,22 @@ h1 {
 
 }
 
+.full-team-btn{
+    padding: 15px 20px;
+    font-size: 18px;
+    border: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    background: #2563eb;
+    color: white;
+    transition: .3s;
+
+}
+
+.full-team-btn:hover{
+    background: white;
+    color:#2563eb;
+}
 
 
 /* Footer */
