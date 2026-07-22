@@ -85,6 +85,7 @@ h1 {
     color: #2563eb;
 }
 
+
 /* Dropdown */
 .dropdown {
     position: relative;
@@ -93,28 +94,50 @@ h1 {
 .dropdown-menu {
     position: absolute;
     top: 100%;
-    left: 0%;
-    background: white;
+    left: 0;
+    min-width: 220px;
+    background: #fff;
     list-style: none;
+    padding: 8px 0;
+    margin: 0;
     display: none;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.50);
     border-radius: 10px;
-    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .15);
+    z-index: 999;
+}
+
+.dropdown-menu li {
+    position: relative;
 }
 
 .dropdown-menu li a {
     display: block;
-    padding: 15px;
-    color: black;
+    padding: 12px 18px;
+    color: #222;
     text-decoration: none;
+    white-space: nowrap;
+    transition: .3s;
 }
 
 .dropdown-menu li a:hover {
-    background: #1f9aaf;
-    color: white;
+    background: #2563eb;
+    color: #fff;
 }
 
-.dropdown:hover .dropdown-menu {
+/* First dropdown */
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+/* Nested dropdown */
+.dropdown-menu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    display: none;
+}
+
+/* Show nested dropdown */
+.dropdown-menu .dropdown:hover>.dropdown-menu {
     display: block;
 }
 
@@ -1550,7 +1573,7 @@ body {
     }
 }
 
-/* Landscape phones (short viewport height) */
+/* Landscape phones */
 @media (max-height: 480px) and (orientation: landscape) {
     .footer {
         padding: 28px 32px 16px;
@@ -1576,7 +1599,7 @@ body {
     }
 }
 
-/* Touch devices: bigger tap targets, no hover-dependent affordances */
+/* Touch devices*/
 @media (hover: none) {
     .social-icons a {
         width: 44px;
@@ -1677,7 +1700,7 @@ body {
 .social-icons a:hover {
     /* background: #2563EB;
     transform: translateY(-6px); */
-transform: translateY(-3px);
+/* transform: translateY(-3px);
 box-shadow: inset -6px -6px 12px #fff,
 inset 6px 6px 12px #cfd5d5;
 
@@ -1697,7 +1720,7 @@ inset 6px 6px 12px #cfd5d5;
 }
 
 /* Responsive for  small display */
-@media(max-width:768px) {
+/* @media(max-width:768px) {
 
     .footer-container {
         flex-direction: column;
@@ -1712,6 +1735,5 @@ inset 6px 6px 12px #cfd5d5;
         justify-content: center;
     }
 
-}
-
-*/
+} */
+ /* */
