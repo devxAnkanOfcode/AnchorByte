@@ -32,13 +32,14 @@
 
 
             <ul class="nav-links">
-                <li><a href="index.html">HOME</a></li>
+                <li><a href="index.html" class="active">HOME</a></li>
+
 
                 <!-- TEAM -->
                 <li class="dropdown">
                     <a href="#">TEAM ▼</a>
                     <ul class="dropdown-menu">
-                        <li><a href="about-us.html">ABOUT US</a></li>
+                        <li><a href="about-us.html" class="active">ABOUT US</a></li>
                         <li><a href="#">PROJECTS</a></li>
                         <li><a href="#">ACHIEVEMENTS</a></li>
                         <li><a href="#">GALLERY</a></li>
@@ -79,11 +80,9 @@
                 <li><a href="#">CONTACT</a></li>
 
                 <li>
-                    <a href="#">
-                        <button class="join-btn" onclick="alert('Currently unavailable!')">
-                            JOIN US
-                        </button>
-                    </a>
+                    <button class="join-btn" onclick="window.location.href=''">
+                        JOIN US
+                    </button>
                 </li>
             </ul>
 
@@ -124,7 +123,8 @@
                 </p>
 
                 <div class="dpbtns">
-                    <button class="learn-more">Learn More About Us <i class="fa-solid fa-arrow-right"></i></button>
+                    <a href="about-us.html"><button class="learn-more">Learn More About Us <i
+                                class="fa-solid fa-arrow-right"></i></button></a>
                     <button class="our-team">Meat Our Team <i class="fas fa-user-group"></i></button>
                 </div>
 
