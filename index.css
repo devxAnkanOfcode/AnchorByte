@@ -837,6 +837,10 @@ h1 {
     margin-bottom: 45px;
 }
 
+.project-marquee h2 span{
+    color: #0d5cff;
+}
+
 .marquee {
     overflow: hidden;
     width: 100%;
