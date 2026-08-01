@@ -924,11 +924,12 @@ h1 {
     text-decoration: none;
     border: solid;
     border-width: 1px;
-    transition: scale 0.3s ease-in-out;
+    transition: scale 0.3s ease-in-out,  box-shadow 0.2s;
 }
 
 .view-projects-btn:hover{
     scale: calc(1.03);
+    box-shadow: 0 10px 30px rgba(37, 99, 235, .3);
 }
 
 /* <============Member section=========>*/
